@@ -1,0 +1,391 @@
+/* CSS Reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Body Styling */
+
+body {
+	font-family: 'Karla', sans-serif;
+	background-image: url("img/black-thread-light.png");
+}
+
+figure {
+	text-align: center;
+}
+
+h1 {
+	font-size: 40px;
+	text-align: center;
+	padding-top: 20px; 
+	padding-bottom: 25px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+	font-size: 30px;
+	margin: 25px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+h3 {
+	font-size: 25px;
+	margin: 25px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+h4 {
+	font-size: 25px;
+	margin: 25px;
+}
+
+p {
+	font-size: 17px;
+	margin: 25px;	
+}
+
+main {
+	line-height: 1.5;
+}
+
+/* Nav Bar  */
+
+.topnav {
+    background-color: #282828;
+    display: block;
+	overflow: hidden;
+}
+
+.topnav a {
+    float: right;
+    color: white;
+    text-align: center;
+    padding: 25px 20px;
+    text-decoration: none;
+	font-size: 17px;
+}
+
+.topnav a:hover {
+	background-color: #484848;
+}
+
+.topnav a.active {
+    background-color: black;
+    color: white;
+}
+
+#noScroll {
+	color: white;
+	background-color: #232323d2;
+	position: absolute;
+    width: 100%;
+}
+
+.logo {
+	height: auto;
+	width: auto;
+	max-height: 55px;
+	padding-left: 20px;
+	padding-top: 5px;
+	z-index: 1;
+	position: absolute;
+}
+
+.indexInfo {
+	margin: auto 10%;
+}
+
+/* Footer Styling */
+
+footer {
+	text-align: center;
+	margin-top: 50px;
+	padding-top: 125px;
+	padding-bottom: 100px;
+	background-color: #232323;
+	color: #9B9B9B;
+}
+
+footer a {
+	color: white;
+	font-weight: bold;
+}
+
+footer a:link {
+	text-decoration: none;
+}
+
+.footerNav {
+	padding-bottom: 15px;
+}
+
+.footerNav a {
+	padding-left: 50px;
+	padding-right: 50px;
+	font-weight: bolder;
+}
+
+.copyright {
+	font-size: smaller;
+}
+
+/* LinkedIn Logo  */
+
+.linkedin {
+	height: 30px;
+	width: 30px;
+}
+
+/* Road To Hire Logo */
+
+.road2hire {
+	height: 30px;
+	width: 30px;
+}
+
+/* Home Page Styling */
+
+/* Banner Image */
+
+.banner {
+	width: 100%;
+}
+
+.black {
+	background-color:#232323;
+	width: 85%;
+	margin: 15px 0px 15px 0px;
+	padding: 100px 0px 100px 100px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.black a {
+	text-decoration:  none;
+	color: white;
+}
+	
+.flex-container {
+	display: flex;
+	justify-content: flex-end;
+	flex-wrap: wrap;
+}
+
+.white { /* technically it's grey but i don't care */
+	background-color: #ebebeb;
+	text-align: right;
+	padding: 100px 100px 100px 0px;
+	margin: 15px 0px 15px 0px;
+	width: 85%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.white a {
+	text-decoration:  none;
+	color: black;
+}
+/* Biography Page Styling */
+
+.portrait {
+	max-height: 300px;
+	max-width: 300px;
+	border-radius: 90%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+
+.bioInfo {
+	margin: auto 10%;
+}
+
+.quotes {
+	margin: auto auto auto 30px;
+	padding: 3px;
+	/* padding-left: 15% */
+}
+
+.quoteGroup1{
+	margin-bottom: 15px;
+}
+
+.quoteGroup2{
+	margin-bottom: 15px;
+}
+
+.quotePics {
+	max-height: 125px;
+	max-width: 125px;
+	border-radius: 90%;
+}
+
+/* Gallery Page Styling */
+
+.galleryPics {
+	padding-top: 15px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+  	align-items: center;
+}
+
+.galleryPics img {
+	margin: 30px;
+	display: flex;
+	flex-wrap: wrap-reverse;
+}
+
+figcaption {
+	text-align: center;
+}
+
+/* Image Stylings  (I finally got this to work I'm lit) */
+
+.crop {
+	height: auto;
+	width: auto;
+	max-width: 350px;
+	max-height: 400px;
+	align-items: center;
+}
+
+/* Resume Styling */
+
+.resumeInfo {
+	margin-left: 15%;
+}
+
+.skills {
+	margin: 0px 50px 50px 50px;
+}
+
+.jobInfo {
+	list-style-type: circle;
+	margin: 0px 50px 50px 50px;
+	font-size: 17px;
+}
+
+.grayText {
+	color: rgb(90, 90, 90);
+}
+
+/* Coding Page Styling */
+
+.codePen {
+	margin: auto 10%;
+}
+
+.codepenPic {
+	margin-top: 40px;
+	height: auto;
+	width: auto;
+	max-height: 500px;
+	max-width: 500px;
+}
+
+/* Contact Page Styling */
+.box {
+	background-color: rgba(0, 0, 0, 0.75);
+	margin: 25px auto;
+	max-width: 50%; 
+	border-radius: 10px;
+	color: white;
+}
+
+.contactForm {
+	text-align: center;
+	margin-top: 25px;
+	margin-bottom: 50px;
+}
+
+.test {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 15px;
+}
+
+input {
+	border-radius: 4px;
+	border: 1px solid black;
+	padding: 10px;
+	margin-left: 2px;
+}
+
+textarea {
+	border-radius: 4px;
+}
+
+label {
+	margin-right: 5px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 600px) {
+	.black {
+		width: 100%;
+	}
+	.white {
+		width: 85%;
+	}
+	
+	.topnav a {
+		display: none;
+	}
+
+	.logo {
+		display: none;
+	}
+
+	#noScroll {
+		position: absolute;
+	}
+
+	.footerNav a {
+		padding: 10px;
+	}
+
+	.box {
+		max-width: 80%;
+	}
+}
