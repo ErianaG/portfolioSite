@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="main.css" />
     <link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600" rel="stylesheet">
+    <script src="scripts.js"></script>
 </head>
 
 <body>
@@ -28,10 +29,10 @@
         <div class="box">
             <h1>CONTACT ME</h1>
             <hr>
-            <form class="contactForm" method="post" action="#">
+            <form class="contactForm" name="contactForm" action="#" onsubmit="return validate()" method="post"> 
                 <div class="test">
-                    <label for="name">Full Name*:</label>
-                    <input id="name" type="text" name="name" value="" placeholder="Name" required>
+                    <label for="name">Full Name:</label>
+                    <input id="name" type="text" name="name" value="" placeholder="Name">
                 </div>
                 <div class="test">
                     <label for="email">Email:</label>
