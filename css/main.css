@@ -157,6 +157,8 @@ footer a:link {
 }
 
 .footerNav {
+	display: flex;
+	justify-content: center;
 	padding-bottom: 15px;
 	margin-bottom: 25px;
 }
@@ -447,6 +449,7 @@ label {
 	.black {
 		width: 100%;
 	}
+
 	.white {
 		width: 85%;
 	}
@@ -463,8 +466,13 @@ label {
 		position: absolute;
 	}
 
+	.footerNav {
+		display: flex;
+		flex-direction: column;
+	}
+
 	.footerNav a {
-		margin: 40px;
+		margin: 10px;
 		padding: 10px;
 	}
 
