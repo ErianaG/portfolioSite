@@ -71,18 +71,17 @@ h2 {
 }
 
 h3 {
-	font-size: 25px;
+	font-size: 23px;
 	margin: 25px;
 	font-family: 'Montserrat', sans-serif;
 }
 
 h4 {
-	font-size: 25px;
+	font-size: 20px;
 	margin: 25px;
 }
 
 p {
-	font-size: 17px;
 	margin: 25px;	
 }
 
@@ -142,8 +141,8 @@ main {
 footer {
 	text-align: center;
 	margin-top: 50px;
-	padding-top: 125px;
-	padding-bottom: 100px;
+	padding-top: 100px;
+	padding-bottom: 75px;
 	background-color: #232323;
 	color: #9B9B9B;
 }
@@ -159,6 +158,7 @@ footer a:link {
 
 .footerNav {
 	padding-bottom: 15px;
+	margin-bottom: 25px;
 }
 
 .footerNav a {
@@ -167,8 +167,17 @@ footer a:link {
 	font-weight: bolder;
 }
 
+.footerNav a:hover {
+	color: #747474;
+}
+
 .copyright {
 	font-size: smaller;
+	margin-bottom: 25px;
+}
+
+.smallertext {
+	font-size: 12px;
 }
 
 /* LinkedIn Logo  */
@@ -199,7 +208,14 @@ footer a:link {
 	margin: 15px 0px 15px 0px;
 	padding: 100px 0px 100px 100px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	transition: all .3s ease-in-out;
 }
+
+.black:hover {
+	width: 100%;
+	box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .45);
+}
+
 .black a {
 	text-decoration:  none;
 	color: white;
@@ -218,6 +234,12 @@ footer a:link {
 	margin: 15px 0px 15px 0px;
 	width: 85%;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	transition: all .3s ease-in-out;
+}
+
+.white:hover {
+	width: 100%;
+	box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .45);
 }
 
 .white a {
@@ -246,12 +268,30 @@ footer a:link {
 	/* padding-left: 15% */
 }
 
-.quoteGroup1{
+.quoteGroup1 {
+	display: flex;
 	margin-bottom: 15px;
 }
 
-.quoteGroup2{
+.quoteGroup1 span {
+	margin-left: 5%;
+}
+
+.quoteGroup2 {
+	display: flex;
 	margin-bottom: 15px;
+}
+
+.quoteGroup2 span {
+	margin-left: 5%;
+}
+
+.quoteGroup3 {
+	display: flex;
+}
+
+.quoteGroup3 span {
+	margin-left: 5%;
 }
 
 .quotePics {
@@ -263,15 +303,17 @@ footer a:link {
 /* Gallery Page Styling */
 
 .galleryPics {
+	max-width: 85%;
+	margin: 0 auto;
 	padding-top: 15px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-  	align-items: center;
+	align-items: center;
 }
 
 .galleryPics img {
-	margin: 30px;
+	margin: 50px;
 	display: flex;
 	flex-wrap: wrap-reverse;
 }
@@ -333,16 +375,37 @@ figcaption {
 	color: white;
 }
 
+.grayline {
+	border-top: 1px solid gray;
+}
+
 .contactForm {
+	display: flex;
+	flex-direction: column;
 	text-align: center;
 	margin-top: 25px;
 	margin-bottom: 50px;
+}
+
+.contactForm label {
+	display: flex;
+	justify-content: center;
+}
+
+.test--btn {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 15px;
 }
 
 .test {
 	padding-top: 10px;
 	padding-bottom: 10px;
 	font-size: 15px;
+}
+
+.test input {
+	width: 150px;
 }
 
 input {
@@ -354,6 +417,7 @@ input {
 
 textarea {
 	border-radius: 4px;
+	resize: none;
 }
 
 label {
@@ -361,6 +425,24 @@ label {
 }
 
 /* Media Queries */
+
+@media screen and (min-width:1000px) {
+	
+	.test input {
+		transition: all .4s ease-in-out .3s;
+	}
+	
+	.test input:focus {
+		width: 30%;
+	}
+
+	.test--btn {
+		padding-top: 10px;
+		padding-bottom: 10px;
+		font-size: 15px;
+	}
+
+}
 @media screen and (max-width: 600px) {
 	.black {
 		width: 100%;
@@ -382,10 +464,29 @@ label {
 	}
 
 	.footerNav a {
+		margin: 40px;
 		padding: 10px;
 	}
 
 	.box {
 		max-width: 80%;
+	}
+
+	.quoteGroup1 {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.quoteGroup2 {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.quoteGroup3 {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
 	}
 }
